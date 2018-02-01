@@ -1,0 +1,36 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:local="clr-namespace:ChessViewer"
+             x:Class="ChessViewer.MainPage">
+
+    <StackLayout VerticalOptions="Center">
+
+        <Label Text="Chess viewer, v.1.0" 
+           Style="{StaticResource infoLabelStyle}"
+           FontSize="40"/>
+
+        <Button Text="New game"
+                Style="{StaticResource buttonStyle}"
+                Clicked="OnNewGameButtonClicked">
+        </Button>
+        
+        <Button Text="Load game"
+                Style="{StaticResource buttonStyle}"
+                IsEnabled="False"
+                Clicked="OnLoadGameButtonClicked">
+        </Button>
+
+        <Button Text="Options"
+                Style="{StaticResource buttonStyle}"
+                Clicked="OnSettingsButtonClicked">
+        </Button>
+
+        <Button Text="Credits"
+                Style="{StaticResource buttonStyle}"
+                Clicked="OnCreditsButtonClicked">
+        </Button>
+
+    </StackLayout>
+
+</ContentPage>
